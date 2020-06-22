@@ -1,7 +1,7 @@
 :root {
   --color-green: #50fa7b;
   --color-roxo: #7159c1;
-  --color-laranja: #F89520;
+  --color-laranja: #f89520;
 }
 
 * {
@@ -62,7 +62,7 @@ section {
 
 div.card {
   background-color: #131218;
-  padding: 64px;
+  padding: 61px;
   border-radius: 8px;
   background: url(https://skylab.rocketseat.com.br/static/media/FeaturedCardBg.40a7d53e.png)
     0% 0% / cover;
@@ -95,7 +95,7 @@ div.card:hover {
   height: 150px;
 }
 
-.card-img img{
+.card-img img {
   height: 80%;
   max-width: 90%;
 }
@@ -162,4 +162,66 @@ div.card:hover {
 }
 .bd-gren:hover {
   border: 3px solid var(--color-green);
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.modal {
+  background: #fff;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close-modal {
+  color: #fff;
+  z-index: 1000;
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.modal .max-modal {
+  color: #fff;
+  z-index: 1000;
+  position: absolute;
+  right: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.modal .min-modal {
+  color: #fff;
+  z-index: 1000;
+  position: absolute;
+  right: 80px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.maxport {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
 }
